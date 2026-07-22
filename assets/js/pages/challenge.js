@@ -125,7 +125,7 @@ function render() {
 			<div class="info-row"><span>Modül</span><span>${category ? category.name : challenge.category}</span></div>
 			<div class="info-row"><span>Puan</span><span>${challenge.points}</span></div>
 			<div class="info-row"><span>Zorluk</span><span style="text-transform:capitalize">${challenge.difficulty}</span></div>
-			<div class="info-row"><span>Durum</span><span>${solved ? "Çözüldü ✅" : "Çözülmedi"}</span></div>
+			<div class="info-row"><span>Durum</span><span>${solved ? "Çözüldü" : "Çözülmedi"}</span></div>
 			<a href="category?cat=${encodeURIComponent(challenge.category)}" class="btn btn-secondary btn-sm" style="text-align:center;">
 				<i class='bx bx-arrow-back'></i> Modüle Dön
 			</a>
