@@ -1,0 +1,40 @@
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	padding: 0.3rem 0.75rem;
+	border-radius: 20px;
+	font-size: 0.78rem;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.badge-points {
+	background: rgba(252, 178, 29, 0.18);
+	color: var(--gold);
+}
+
+.badge-solved {
+	background: var(--success-bg);
+	color: var(--success);
+}
+
+.badge-category {
+	background: rgba(77, 163, 255, 0.15);
+	color: var(--info);
+}
+
+.badge-kolay {
+	background: var(--success-bg);
+	color: var(--success);
+}
+
+.badge-orta {
+	background: rgba(252, 178, 29, 0.18);
+	color: var(--gold);
+}
+
+.badge-zor {
+	background: var(--danger-bg);
+	color: var(--danger);
+}

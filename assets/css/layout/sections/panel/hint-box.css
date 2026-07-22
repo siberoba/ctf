@@ -1,0 +1,39 @@
+.hint-box {
+	margin-bottom: 1.5rem;
+}
+
+.hint-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	background: none;
+	border: 1px dashed rgba(255, 255, 255, 0.25);
+	color: var(--gray-text);
+	padding: 0.6rem 1rem;
+	border-radius: var(--radius-sm);
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition:
+		border-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.hint-toggle:hover {
+	border-color: var(--gold);
+	color: var(--gold);
+}
+
+.hint-content {
+	margin-top: 0.75rem;
+	padding: 1rem;
+	background: rgba(77, 163, 255, 0.08);
+	border-left: 3px solid var(--info);
+	border-radius: var(--radius-sm);
+	color: var(--light-text);
+	font-size: 0.92rem;
+	display: none;
+}
+
+.hint-content.open {
+	display: block;
+}

@@ -1,0 +1,81 @@
+.flag-form {
+	display: flex;
+	gap: 0.6rem;
+	margin-top: 0.5rem;
+	flex-wrap: wrap;
+}
+
+.flag-form input[type="text"] {
+	flex: 1 1 240px;
+	padding: 0.85rem 1rem;
+	border-radius: var(--radius-sm);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	background: rgba(0, 0, 0, 0.3);
+	color: var(--light-text);
+	font-size: 0.95rem;
+	font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+.flag-form input[type="text"]:focus {
+	outline: none;
+	border-color: var(--gold);
+}
+
+.flag-form input[type="text"].error-shake {
+	animation: shake 0.4s ease;
+	border-color: var(--danger);
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translateX(-2px);
+	}
+	20%,
+	80% {
+		transform: translateX(4px);
+	}
+	30%,
+	50%,
+	70% {
+		transform: translateX(-6px);
+	}
+	40%,
+	60% {
+		transform: translateX(6px);
+	}
+}
+
+.flag-feedback {
+	width: 100%;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+	display: none;
+	padding: 0.75rem 1rem;
+	border-radius: var(--radius-sm);
+}
+
+.flag-feedback.show {
+	display: block;
+}
+
+.flag-feedback.success {
+	background: var(--success-bg);
+	color: var(--success);
+}
+
+.flag-feedback.error {
+	background: var(--danger-bg);
+	color: var(--danger);
+}
+
+.solved-banner {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	background: var(--success-bg);
+	color: var(--success);
+	padding: 1rem 1.25rem;
+	border-radius: var(--radius-sm);
+	font-weight: 600;
+}

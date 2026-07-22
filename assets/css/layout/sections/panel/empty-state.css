@@ -1,0 +1,12 @@
+.empty-state {
+	text-align: center;
+	padding: 4rem 1rem;
+	color: var(--gray-text);
+}
+
+.empty-state i {
+	font-size: 3rem;
+	color: var(--gold);
+	margin-bottom: 1rem;
+	display: block;
+}

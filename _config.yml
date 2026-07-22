@@ -1,5 +1,6 @@
 title: Siber Oba
 description: Siber Güvenlik Topluluğu
+baseurl: "/ctf"
 
 include:
   - _includes

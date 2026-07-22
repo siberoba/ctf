@@ -1,0 +1,14 @@
+[
+	{
+		"id": "test-01",
+		"title": "Gizli Yorum",
+		"points": 10,
+		"difficulty": "kolay",
+		"description": "Aşağıdaki bağlantıda basit bir tanıtım sayfası bulunuyor. Sayfanın kaynak kodunu (HTML) incelediğinizde geliştiricinin unuttuğu bir yorum satırı dikkatinizi çekecektir.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "717c140ab94441367e96b4b38c9ee7b2a7bfa56a69a585b4650ace2bbddb05a5",
+		"hint": "Tarayıcınızda sağ tık > 'Sayfa Kaynağını Görüntüle' veya Ctrl+U.",
+		"files": [],
+		"link": "https://siberoba.github.io/ctf"
+	}
+]

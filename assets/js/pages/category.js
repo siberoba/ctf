@@ -1,8 +1,7 @@
-import { renderLayout } from "../layout.js";
-import { categories, challenges } from "../data/challenges.js";
+import { loadData } from "../data/loader.js";
 import { getSolvedIds } from "../lib/storage.js";
 
-renderLayout("");
+const { categories, challenges } = await loadData();
 
 const params = new URLSearchParams(window.location.search);
 const slug = params.get("cat");

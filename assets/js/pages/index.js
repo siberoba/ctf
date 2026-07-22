@@ -1,8 +1,7 @@
-import { renderLayout } from "../layout.js";
-import { categories, challenges } from "../data/challenges.js";
+import { loadData } from "../data/loader.js";
 import { getSolvedIds } from "../lib/storage.js";
 
-renderLayout("");
+const { categories, challenges } = await loadData();
 
 function render() {
 	const solvedIds = new Set(getSolvedIds());
@@ -31,16 +30,13 @@ function render() {
 		</div>
 	`;
 
-	document.getElementById("overall-progress").style.width = `${percent}%`;
-	document.getElementById("overall-progress-label").textContent = `${percent}% tamamlandı`;
-
 	const grid = document.getElementById("category-grid");
 
 	if (!categories.length) {
 		grid.innerHTML = `
 			<div class="empty-state">
 				<i class='bx bx-folder-open'></i>
-				<p>Henüz bir kategori eklenmemiş. assets/js/data/challenges.js dosyasını düzenleyin.</p>
+				<p>Henüz bir kategori eklenmemiş. data/categories.json dosyasını düzenleyin.</p>
 			</div>`;
 		return;
 	}

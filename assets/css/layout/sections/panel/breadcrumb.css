@@ -1,0 +1,34 @@
+.ctf-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2.5rem 2rem 4rem;
+}
+
+.ctf-breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--gray-text);
+	font-size: 0.9rem;
+	margin-bottom: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.ctf-breadcrumb a {
+	color: var(--gray-text);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.ctf-breadcrumb a:hover {
+	color: var(--gold);
+}
+
+.ctf-breadcrumb .sep {
+	opacity: 0.5;
+}
+
+.ctf-breadcrumb .current {
+	color: var(--light-text);
+	font-weight: 600;
+}

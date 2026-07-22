@@ -1,10 +1,9 @@
-import { renderLayout } from "../layout.js";
-import { categories, challenges } from "../data/challenges.js";
+import { loadData } from "../data/loader.js";
 import { isSolved, markSolved, isHintRevealed, revealHint } from "../lib/storage.js";
 import { checkFlag } from "../lib/crypto.js";
 import { showToast } from "../lib/toast.js";
 
-renderLayout("");
+const { categories, challenges } = await loadData();
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");

@@ -1,0 +1,65 @@
+.challenge-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 1.5rem;
+}
+
+.challenge-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	padding: 1.75rem;
+	background: var(--card-bg);
+	border: 1px solid var(--card-border);
+	border-radius: var(--radius);
+	text-decoration: none;
+	color: var(--light-text);
+	transition:
+		transform 0.25s ease,
+		border-color 0.25s ease,
+		background 0.25s ease;
+}
+
+.challenge-card:hover {
+	transform: translateY(-6px);
+	border-color: var(--gold);
+	background: rgba(205, 156, 46, 0.1);
+}
+
+.challenge-card.solved {
+	border-color: rgba(46, 204, 113, 0.5);
+	background: var(--success-bg);
+}
+
+.challenge-card .solved-flag {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: var(--success);
+	font-size: 1.3rem;
+}
+
+.challenge-card h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	padding-right: 1.5rem;
+}
+
+.challenge-card .ch-desc {
+	color: var(--gray-text);
+	font-size: 0.9rem;
+	line-height: 1.5;
+	flex-grow: 1;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.challenge-card .ch-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.25rem;
+}
