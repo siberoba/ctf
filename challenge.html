@@ -1,0 +1,33 @@
+---
+title: Siber Oba CTF - Görev
+nav: panel
+permalink: /challenge
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		{% include head.html %}
+	</head>
+	<body>
+		{% include header.html %}
+
+		<main>
+			<div class="ctf-container">
+				<div class="ctf-breadcrumb">
+					<a href="/">Panel</a>
+					<span class="sep">/</span>
+					<a href="#" id="breadcrumb-cat">Modül</a>
+					<span class="sep">/</span>
+					<span class="current" id="breadcrumb-current">Görev</span>
+				</div>
+
+				<div class="challenge-detail" id="detail-root"></div>
+			</div>
+		</main>
+
+		{% include footer.html %}
+
+		<script type="module" src="assets/js/pages/challenge.js"></script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+	--gold: #fcb21d;
+	--green: #1a5510;
+	--dark-bg: #1e1e1e;
+	--light-text: #ffffff;
+	--gray-text: #b0b0c0;
+	--card-bg: rgba(85, 69, 16, 0.1);
+	--panel-bg: #161616;
+	--card-border: rgba(252, 178, 29, 0.25);
+	--success: #2ecc71;
+	--success-bg: rgba(46, 204, 113, 0.12);
+	--danger: #ff5c5c;
+	--danger-bg: rgba(255, 92, 92, 0.12);
+	--info: #4da3ff;
+	--radius: 12px;
+	--radius-sm: 8px;
+	--shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}

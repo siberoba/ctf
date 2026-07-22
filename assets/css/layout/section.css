@@ -1,0 +1,34 @@
+@import url("./sections/panel.css");
+
+[id] {
+	scroll-margin-top: 90px;
+}
+
+main {
+	position: relative;
+	z-index: 10;
+}
+
+section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 2rem;
+}
+
+section h2 {
+	font-size: 2rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
+section h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+section > p:first-of-type {
+	color: var(--gray-text);
+	font-size: 1.1rem;
+	margin-bottom: 3rem;
+}

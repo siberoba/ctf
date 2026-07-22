@@ -1,0 +1,141 @@
+/* Small phones */
+@media (max-width: 480px) {
+	.nav-container {
+		padding: 1rem;
+	}
+
+	.logo img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.logo span {
+		font-size: 1.1rem;
+	}
+
+	.hero {
+		padding: 2.5rem 1.25rem;
+		min-height: calc(100vh - 72px);
+	}
+
+	.hero-content h1 {
+		font-size: 2rem;
+	}
+
+	.hero-content p {
+		font-size: 1rem;
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		width: 100%;
+		gap: 1rem;
+	}
+
+	.btn {
+		width: 100%;
+		text-align: center;
+	}
+
+	section {
+		padding: 2.5rem 1.25rem;
+	}
+
+	section h2 {
+		font-size: 1.6rem;
+	}
+
+	.stats-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.join-content h2 {
+		font-size: 1.8rem;
+	}
+
+	.footer-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Tablets and small laptops */
+@media (max-width: 770px) {
+	.nav-links {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: rgba(30, 30, 30, 0.95);
+		flex-direction: column;
+		padding: 1rem 2rem;
+		gap: 1rem;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		max-height: calc(100vh - 90px);
+		overflow-y: auto;
+	}
+
+	.nav-links.active {
+		display: flex;
+	}
+
+	.nav-links a {
+		display: block;
+		padding: 0.5rem 0;
+	}
+
+	.menu-toggle {
+		display: block;
+		padding: 0.5rem;
+		line-height: 1;
+	}
+
+	.hero {
+		padding: 3rem 1.5rem;
+		text-align: center;
+	}
+
+	.hero-content h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero-buttons {
+		justify-content: center;
+	}
+
+	.about-container {
+		grid-template-columns: 1fr;
+	}
+
+	.stats-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section {
+		padding: 3rem 1.5rem;
+	}
+
+	section h2 {
+		font-size: 1.8rem;
+	}
+
+	.projects-grid {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+}
+
+/* Respect users who've asked for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}

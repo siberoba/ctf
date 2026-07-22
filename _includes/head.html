@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Siber Oba, Türkiye'nin en aktif siber güvenlik topluluğu. Araştırma, eğitim ve iş birliği aracılığıyla dijital dünyayı güvenli hale getiriyoruz.">
+<title>{% if page.title %}{{ page.title }}{% else %}Siber Oba - Siber Güvenlik Topluluğu{% endif %}</title>
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/assets/img/logo.png' | relative_url }}" type="image/png">
+
+{% if page.nav == 'home' %}
+<link rel="preload" as="image" href="{{ '/assets/img/hero.webp' | relative_url }}">
+{% endif %}
+
+<link rel="preconnect" href="https://cdn.boxicons.com" crossorigin>
+
+<!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">

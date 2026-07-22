@@ -1,0 +1,33 @@
+---
+title: Siber Oba CTF - Modül
+nav: panel
+permalink: /category
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		{% include head.html %}
+	</head>
+	<body>
+		{% include header.html %}
+
+		<main>
+			<div class="ctf-container">
+				<div class="ctf-breadcrumb">
+					<a href="/">Panel</a>
+					<span class="sep">/</span>
+					<span class="current" id="breadcrumb-current">Modül</span>
+				</div>
+
+				<div class="ctf-page-header" id="cat-header"></div>
+
+				<div class="challenge-grid" id="challenge-grid"></div>
+			</div>
+		</main>
+
+		{% include footer.html %}
+
+		<script type="module" src="assets/js/pages/category.js"></script>
+	</body>
+</html>

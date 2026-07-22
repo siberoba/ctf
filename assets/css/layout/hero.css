@@ -1,0 +1,53 @@
+.hero {
+	max-width: none;
+	position: relative;
+	min-height: calc(100vh - 90px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(rgba(10, 10, 10, 0.75), rgba(10, 10, 10, 0.9)), url("/assets/img/hero.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.hero-content h1 {
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+	animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h1 .gold {
+	color: var(--gold);
+}
+
+.hero-content p {
+	font-size: 1.2rem;
+	color: var(--gray-text);
+	margin-bottom: 2rem;
+	line-height: 1.8;
+	animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-buttons {
+	display: flex;
+	gap: 1.5rem;
+	animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-graphic {
+	position: relative;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-graphic img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
