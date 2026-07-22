@@ -516,7 +516,6 @@
 /* ---------- Sidebar (detail info card) ---------- */
 
 .detail-side {
-	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
