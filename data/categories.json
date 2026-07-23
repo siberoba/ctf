@@ -1,8 +1,8 @@
 [
 	{
-		"slug": "test",
-		"name": "test",
-		"icon": "bx-code-alt",
-		"description": "Test için bir kategoridir."
+		"slug": "kriptografi",
+		"name": "Kriptografi",
+		"icon": "bx-lock",
+		"description": "Kriptografi ile ilgili sorular için bir kategoridir."
 	}
 ]

@@ -1,4 +1,4 @@
-import { loadData } from "../data/loader.js";
+import { loadData } from "../loader.js";
 import { isSolved, markSolved, isHintRevealed, revealHint } from "../lib/storage.js";
 import { checkFlag } from "../lib/crypto.js";
 import { showToast } from "../lib/toast.js";
@@ -60,15 +60,18 @@ function render() {
 			<h3 style="margin-bottom:0.75rem;font-size:1.05rem;">Ek Dosyalar</h3>
 			<ul class="files-list">
 				${challenge.files
-					.map(
-						(f) => `
-					<li>
-						<a href="${f.url}" download>
-							<i class='bx ${fileIcon(f.name)}'></i>
-							<span>${f.name}</span>
-						</a>
-					</li>`,
-					)
+					.map((f) => {
+						const name = f.split("/").pop();
+
+						return `
+							<li>
+								<a href="${f}" download>
+									<i class='bx ${fileIcon(name)}'></i>
+									<span>${name}</span>
+								</a>
+							</li>
+						`;
+					})
 					.join("")}
 			</ul>
 		`

@@ -1,4 +1,4 @@
-import { loadData } from "../data/loader.js";
+import { loadData } from "../loader.js";
 import { getSolvedIds } from "../lib/storage.js";
 
 const { categories, challenges } = await loadData();

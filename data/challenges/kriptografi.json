@@ -1,0 +1,86 @@
+[
+	{
+		"id": "kriptografi-01",
+		"title": "Sezarın hakkı sezara",
+		"points": 5,
+		"difficulty": "kolay",
+		"description": "VLEHURED{Fhdv4u_E0a_F1skhu} şeklinde bir metin elde ettiniz. Bu metin Sezar şifrelemesi ile şifrelenmiş bir flagdir. Flag'i çözmek için Sezar şifrelemesini çözmeniz gerekmektedir.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "626936896c45c61a055b95062d442acc94132ba0a040726f86d8f8e557f1d741",
+		"hint": "Ceasar = 3",
+		"files": [],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-02",
+		"title": "Bu da ne?",
+		"points": 7,
+		"difficulty": "kolay",
+		"description": "U0lCRVJPQkF7QmFzZV82XzR9 metin şifrelenmiş gibi görünüyor ama aslında yalnızca kodlanmış.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "fce5dedc23665d304dd0a9fc0415e7f5dd94a5b39e0506bc5a9144b3ac3c436f",
+		"hint": "Base64",
+		"files": [],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-03",
+		"title": "Hex mi Bu?",
+		"points": 8,
+		"difficulty": "kolay",
+		"description": "Elinizde aşağıdaki veri bulunuyor.\n\n53494245524f42417b4833785f49735f46756e7d\n\nFlag'i elde edin.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "82ee7be3bdad2ff8b4c63d73ee533007148c6a61794d14e978f3e0f5d336dc22",
+		"hint": "16 tabanlı sayı sistemi.",
+		"files": [],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-04",
+		"title": "ROT13",
+		"points": 8,
+		"difficulty": "kolay",
+		"description": "Aşağıdaki metin ROT13 ile dönüştürülmüştür.\n\nFVOREBON{Ebg13_Vf_Rnfl}\n\nFlag'i bulun.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "d67b08f51c82fe5349cca91124ff90f9ab6c761e6bea969e31839dd7a158f442",
+		"hint": "ROT13 harfleri 13 karakter kaydırır.",
+		"files": [],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-06",
+		"title": "Tek Byte XOR",
+		"points": 15,
+		"difficulty": "orta",
+		"description": "Ekli dosyada hex formatında bir veri bulunuyor. Veri tek byte'lık bir anahtarla XOR'lanmıştır. Flag'i elde edin.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "fd57398738dea3ce064c92c220c061260b6af10e8ed921c45fd186bfa3722d19",
+		"hint": "CyberChef'in XOR işlemi işinizi kolaylaştırabilir.",
+		"files": ["data/upload/xor.txt"],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-07",
+		"title": "Çifte Kodlama",
+		"points": 20,
+		"difficulty": "orta",
+		"description": "Dosyadaki veri önce Base64, ardından Hex olarak kodlanmıştır. Doğru sırayla çözdüğünüzde flag'e ulaşabilirsiniz.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "6a8435cceeb5e857576f2614837e66e1efaac7baef6520ed5672ec21dd195d0b",
+		"hint": "İlk baktığınız format doğru olmayabilir.",
+		"files": ["data/upload/double.txt"],
+		"link": ""
+	},
+	{
+		"id": "kriptografi-08",
+		"title": "RSA Başlangıç",
+		"points": 35,
+		"difficulty": "zor",
+		"description": "Elinizde n, e ve şifreli mesaj bulunuyor. n değeri küçük asal sayıların çarpımıdır. Private key'i hesaplayıp mesajı çözün.",
+		"flagFormat": "SIBEROBA{...}",
+		"flagHash": "<sha256>",
+		"hint": "Önce n'i çarpanlarına ayırın.",
+		"files": ["data/upload/rsa.txt"],
+		"link": ""
+	}
+]
