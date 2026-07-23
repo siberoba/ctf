@@ -7,7 +7,7 @@
 		"description": "VLEHURED{Fhdv4u_E0a_F1skhu} şeklinde bir metin elde ettiniz. Bu metin Sezar şifrelemesi ile şifrelenmiş bir flagdir. Flag'i çözmek için Sezar şifrelemesini çözmeniz gerekmektedir.",
 		"flagFormat": "SIBEROBA{...}",
 		"flagHash": "626936896c45c61a055b95062d442acc94132ba0a040726f86d8f8e557f1d741",
-		"hint": "Ceasar = 3",
+		"hint": "Shift = 23",
 		"files": [],
 		"link": ""
 	},
